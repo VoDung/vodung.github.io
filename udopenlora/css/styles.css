@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  list-style: none; }
+
+a, a:hover {
+  text-decoration: none; }
+
+#wrapper {
+  position: relative;
+  background: url("../images/5.jpg") center top no-repeat; }
+
+#wrapper::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #003053c2; }
+
+.guide {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+  min-height: 650px;
+  position: relative;
+  z-index: 1; }
+
+.logo h1 {
+  margin: 0; }
+
+.logo img {
+  width: 50vw;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  vertical-align: middle; }
+
+.content-text {
+  padding: 1vw 15vw;
+  margin-bottom: 5vw; }
+
+.content-text h2 {
+  margin: 0;
+  text-align: center;
+  font-size: 1.5vw;
+  color: #dadada; }
+
+#subscribe ul li {
+  position: relative;
+  text-align: center; }
+
+#subscribe ul li:after, #subscribe ul li:before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  background: white;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  -moz-transition: .3s;
+  transition: .3s; }
+
+#subscribe ul li .box-link:after, #subscribe ul li .box-link:before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 0%;
+  background: white;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  -moz-transition: .3s;
+  transition: .3s; }
+
+#subscribe ul li .box-link:after {
+  right: 5px;
+  top: 5px; }
+
+#subscribe ul li .box-link:before {
+  left: 5px;
+  bottom: 5px; }
+
+#subscribe ul li:after {
+  top: 5px;
+  left: 5px; }
+
+#subscribe ul li:before {
+  bottom: 5px;
+  right: 5px; }
+
+#subscribe ul li .box-link:hover:after, #subscribe ul li .box-link:hover:before {
+  height: -webkit-calc(100% - 10px);
+  height: -moz-calc(100% - 10px);
+  height: calc(100% - 10px); }
+
+#subscribe ul li:hover:after, #subscribe ul li:hover:before {
+  width: -webkit-calc(100% - 10px);
+  width: -moz-calc(100% - 10px);
+  width: calc(100% - 10px); }
+
+#subscribe ul li h3 {
+  position: relative;
+  -webkit-transition: padding-right 0.5s;
+  -o-transition: padding-right 0.5s;
+  -moz-transition: padding-right 0.5s;
+  transition: padding-right 0.5s;
+  display: inline-block;
+  margin-bottom: 2vw;
+  margin-top: .5vw;
+  font-size: 1.5vw; }
+
+#subscribe ul li h3:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -1vw;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s; }
+
+#subscribe ul li a {
+  color: white;
+  display: block;
+  position: relative;
+  overflow: hidden; }
+
+#subscribe ul li a:before {
+  position: absolute;
+  content: "";
+  width: 64%;
+  height: 100%;
+  left: -100%;
+  top: 0;
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 100%);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.8)));
+  background: -moz- oldlinear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 100%);
+  background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 100%);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 100%);
+  -webkit-transform: skewX(-25deg);
+  -moz-transform: skewX(-25deg);
+   -ms-transform: skewX(-25deg);
+       transform: skewX(-25deg);
+  -webkit-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  transition: 0.5s ease; }
+
+#subscribe ul li a:hover:before {
+  -webkit-animation: shine 0.5s ease 0.2s 1;
+  -moz-animation: shine 0.5s ease 0.2s 1;
+       animation: shine 0.5s ease 0.2s 1; }
+
+#subscribe ul li a i {
+  margin-top: 2vw;
+  display: block;
+  font-size: 2.5vw; }
+
+#subscribe ul li a:hover h3 {
+  padding-right: 1.2vw; }
+
+#subscribe ul li a:hover h3:after {
+  opacity: 1;
+  right: 0; }
+
+#subscribe ul li:nth-of-type(1) {
+  background-color: #27A9E3; }
+
+#subscribe ul li:nth-of-type(2) {
+  background-color: #1BBC9B; }
+
+#subscribe ul li:nth-of-type(3) {
+  background-color: #9B58B5; }
+
+@-moz-keyframes shine {
+  0% {
+    left: -100%; }
+  100% {
+    left: 110%; } }
+
+@keyframes shine {
+  0% {
+    left: -100%; }
+  100% {
+    left: 110%; } }
+
+@-webkit-keyframes shine {
+  0% {
+    left: -100%; }
+  100% {
+    left: 110%; } }
+
+@media (min-width: 769px) {
+  #subscribe {
+    width: 60vw; }
+  #subscribe ul {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+       -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%; }
+  #subscribe ul li {
+    width: 32%; } }
+
+@media (max-width: 768px) {
+  #subscribe {
+    width: 60vw; }
+  #subscribe ul li {
+    width: 100%; }
+  #subscribe ul li:not(:last-child) {
+    margin-bottom: 2.5vw; }
+  #subscribe ul li h3 {
+    font-size: 4vw;
+    margin-bottom: 0; }
+  #subscribe ul li a i {
+    font-size: 6vw;
+    margin-top: 0; }
+  #subscribe ul li h3 {
+    margin-top: 3vw; }
+  #subscribe ul li a {
+    padding: 5vw 0; }
+  #subscribe ul li h3:after {
+    right: -4vw; }
+  #subscribe ul li a:hover h3 {
+    padding-right: 3.5vw; }
+  .content-text h2 {
+    text-align: justify;
+    font-size: 3vw; }
+  .content-text {
+    padding-left: 10vw;
+    padding-right: 10vw;
+    margin-bottom: 10vw; }
+  .logo img {
+    width: 80vw; } }
