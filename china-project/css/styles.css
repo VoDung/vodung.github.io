@@ -16,7 +16,7 @@
 @font-face {
   font-family: MSYH;
   src: url(../fonts/MicrosoftYaHei-01.eot);
-  src: url(../fonts/chinese.msyh.ttf), url(../fonts/MicrosoftYaHei-01.eot?#iefix) format("eot"), url(../fonts/MSYH.TTC); }
+  src: url(../fonts/MicrosoftYaHei-01.ttf), url(../fonts/MicrosoftYaHei-01.eot?#iefix) format("eot"), url(../fonts/MSYH.TTC); }
 
 @font-face {
   font-family: MSYHBD;
